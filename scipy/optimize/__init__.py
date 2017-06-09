@@ -242,6 +242,7 @@ from .nonlin import *
 from .slsqp import fmin_slsqp
 from .nnls import nnls
 from ._basinhopping import basinhopping
+from ._stochasticbb import stochasticbb
 from ._linprog import linprog, linprog_verbose_callback
 from ._hungarian import linear_sum_assignment
 from ._differentialevolution import differential_evolution
