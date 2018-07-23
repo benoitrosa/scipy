@@ -209,9 +209,9 @@ class _BenchOptimizers(Benchmark):
         if methods is None:
             methods = ["COBYLA", 'Powell',
                        'L-BFGS-B', 'BFGS', 'CG', 'TNC', 'SLSQP',
-                       "Newton-CG", 'dogleg', 'trust-ncg', 'trust-exact']
+                       "Newton-CG", 'dogleg', 'trust-ncg', 'trust-exact', 'Nelder-Mead']
 
-        fonly_methods = ["COBYLA", 'Powell']
+        fonly_methods = ["COBYLA", 'Powell','Nelder-Mead']
         for method in fonly_methods:
             if method not in methods:
                 continue
@@ -254,7 +254,7 @@ class BenchSmoothUnbounded(Benchmark):
          'sin_1d', 'booth', 'beale', 'LJ'],
         ["COBYLA", 'Powell',
          'L-BFGS-B', 'BFGS', 'CG', 'TNC', 'SLSQP',
-         "Newton-CG", 'dogleg', 'trust-ncg', 'trust-exact'],
+         "Newton-CG", 'dogleg', 'trust-ncg', 'trust-exact', 'Nelder-Mead'],
         ["mean_nfev", "mean_time"]
     ]
     param_names = ["test function", "solver", "result type"]
